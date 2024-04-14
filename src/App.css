@@ -3,12 +3,14 @@
   width: 100vw;
 }
 
-.main-page {
+.home, .main-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: #83C5BE;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -28,12 +30,6 @@
 .nav-link {
   padding: 1em;
   color: white;
-}
-
-.main-page {
-  background-color: #83C5BE;
-  width: 100vw;
-  height: 100vh;
 }
 
 #page-title {

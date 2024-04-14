@@ -30,14 +30,14 @@ const Create = () => {
     return(
         <div className="form-page">
             <h1>Create a new post!</h1>
-            <form>
-                <input type="text" id="title" name="title" placeholder="Title" onChange={handleChange}></input>
+            <form className="create-form">
+                <input type="text" className="create-input" id="title" name="title" placeholder="Title" onChange={handleChange}></input>
                 <br/>
-                <input type="text" id="author" name="author" placeholder="Your Name" onChange={handleChange}></input>
+                <input type="text" id="author" className="create-input" name="author" placeholder="Your Name" onChange={handleChange}></input>
                 <br/>
-                <input type="text" id="content" name="content" placeholder="Content (optional)" onChange={handleChange}></input>
+                <textarea id="content" className="create-input" name="content" placeholder="Content (optional)" onChange={handleChange}></textarea>
                 <br/>
-                <input type="text" id="img-url" name="img" placeholder="ImageURL (optional" onChange={handleChange}></input>
+                <input type="text" id="img-url" className="create-input" name="img" placeholder="ImageURL (optional)" onChange={handleChange}></input>
                 <br/>
                 <button onClick={createPost}>Create Post</button>
             </form>

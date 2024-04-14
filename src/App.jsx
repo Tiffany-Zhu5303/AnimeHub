@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
+import { supabase } from './client'
+import Feed from './components/Feed'
 
-function App() {
-
+function App(props) {
   return (
     <div className='main-page'>
-      <p>what's going on</p>
+      <div className='filters'>
+        <h3>Order by: </h3>
+      </div>
+      <Feed />
     </div>
   )
 }

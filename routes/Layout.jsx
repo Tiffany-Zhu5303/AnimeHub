@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const Layout = () => {
     return(
-        <div className="main-page">
+        <div className="home">
             <nav className="nav">
                 <h2 id="page-title">Animehub</h2>
                 <div className="links">

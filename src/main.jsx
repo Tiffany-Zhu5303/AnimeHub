@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import App from './App.jsx'
 import Layout from '../routes/Layout.jsx'
 import Create from '../routes/Create.jsx'
+import View from '../routes/View.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/' element={<Layout />}>
           <Route index={true} element={<App />}></Route>
           <Route path="/create" element={<Create />}></Route>
+          <Route path="/view/:id" element={<View />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
