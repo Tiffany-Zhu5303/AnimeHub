@@ -12,7 +12,8 @@
     height: 80vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: #006D77 white;
 }
 
 .content {

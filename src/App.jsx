@@ -10,6 +10,7 @@ function App(props) {
         <h3>Order by: </h3>
       </div>
       <Feed />
+      <br/>
     </div>
   )
 }

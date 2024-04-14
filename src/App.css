@@ -32,6 +32,12 @@
   color: white;
 }
 
+.posts {
+  border-radius: 5px;
+  background-color: #006D77;
+  padding: 1rem;
+}
+
 #page-title {
   padding-left: 1em;
 }

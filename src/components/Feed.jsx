@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { supabase } from "../client";
 import Post from "./Post";
+import "../App.css";
 
 const Feed = (props) => {
     const [posts, setPosts] = useState([]);
