@@ -6,4 +6,6 @@
     width: 80vw;
     border: #006D77 solid 1rem;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
 }

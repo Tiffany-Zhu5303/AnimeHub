@@ -6,7 +6,7 @@ const Post = (props) => {
     return(
         <Link to={"/view/"+props.id}>
             <div className="post">
-                <div>
+                <div className="post-info">
                     <p>Posted {props.timestamp}</p>
                     <h2>{props.title}</h2>
                     <p>By: {props.author}</p>

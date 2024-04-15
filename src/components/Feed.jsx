@@ -21,7 +21,7 @@ const Feed = (props) => {
             posts && posts.length > 0 ?
             posts.map((posts)=>
             <Post key={posts.id} id={posts.id} title={posts.title} author={posts.author}
-            timestamp={posts.created_at} upvotes={posts.upvotes}/>) : <h2>No posts yet 😞</h2>
+            timestamp={posts.created_at} img={posts.img} upvotes={posts.upvotes}/>) : <h2>No posts yet 😞</h2>
             }
         </div>
     )
