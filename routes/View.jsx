@@ -5,23 +5,33 @@ import { useParams } from "react-router-dom";
 
 const View = () => {
     const {id} = useParams();
-    const [post, setPost] = useState({created_by:"", title:"", author:"", upvotes:"", img:"", content:"", comments:[]});
+    const [count, setCount] = useState(0);
+    const [post, setPost] = useState({created_by:"", title:"", author:"", upvotes:"", img:"", content:"", upvotes:0, comments:[]});
 
     useEffect(() => {
         const fetchPost = async() => {
             const {data} = await supabase.from('AnimeForums').select().eq("id", id);
             setPost(data[0]);
+            setCount(data[0].upvotes);
         }
 
         fetchPost();
 
     }, []);
 
+    const upvote = async() => {
+        await supabase.from("AnimeForums")
+        .update({
+            upvotes: count+1
+        }).eq("id", id);
+        setCount(count+1);
+    }
+
     return(
         <div className="post-detail">
             <h4>Posted {post.created_by}</h4>
             <h4>By: {post.author}</h4>
-            <h4>{post.upvotes} upvotes</h4> 
+            {count === 1 ? <h4>{count} upvote</h4> : <h4>{count} upvotes</h4>}
 
             <div className="content">
                 <h2 id="post-title">{post.title}</h2>
@@ -31,6 +41,8 @@ const View = () => {
                 <h3 id="post-content">{post.content}</h3>
                 <br/>
             </div>
+
+            <button onClick={upvote}>Upvote!</button>
             
             <div className="comment-section">
                 <h4>Comments: </h4> 
@@ -39,7 +51,7 @@ const View = () => {
 
                     </div>
                 ):(<p>No comments yet!</p>)}
-                <form className="leave comment">
+                <form className="makeComment">
 
                 </form>
             </div>
