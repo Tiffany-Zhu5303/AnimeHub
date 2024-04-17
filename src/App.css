@@ -11,6 +11,7 @@
   height: 100vh;
   background-color: #83C5BE;
   overflow-x: hidden;
+  scrollbar-color: #006D77 white;
 }
 
 .nav {
@@ -51,6 +52,11 @@
   margin: 0em 1em;
   height: fit-content;
   background-color: #004B52;
+}
+
+.filter-buttons:hover {
+  background-color: #EDF6F9;
+  color: #004B52;
 }
 
 #page-title {
