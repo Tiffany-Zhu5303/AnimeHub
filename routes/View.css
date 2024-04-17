@@ -36,6 +36,26 @@
     cursor: pointer;    
 }
 
+.comment-input {
+    background-color: #EDF6F9;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.comment-display {
+    color: black;
+}
+
+#new-comment {
+    width: 59vw;
+    background-color: #EDF6F9;
+    color: black;
+}
+
+#post-image {
+    max-width: 30vh;
+}
+
 #edit-icon {
     height: 30px;
     width: 30px;

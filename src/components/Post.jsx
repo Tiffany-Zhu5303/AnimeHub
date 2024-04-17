@@ -12,7 +12,7 @@ const Post = (props) => {
                     <p>By: {props.author}</p>
                     <p>{props.upvotes} upvotes</p> 
                 </div>
-                <img src={props.img} />
+                <img className="view-image" src={props.img} />
             </div>
         </Link>
     );
