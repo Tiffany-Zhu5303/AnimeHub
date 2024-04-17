@@ -6,6 +6,7 @@ const Layout = () => {
         <div className="home">
             <nav className="nav">
                 <h2 id="page-title">Animehub</h2>
+                <input id="search" placeholder="Search Title..."></input>
                 <div className="links">
                     <Link className="nav-link" to="/">Home</Link>
                     <Link className="nav-link" to="/create">Create</Link>

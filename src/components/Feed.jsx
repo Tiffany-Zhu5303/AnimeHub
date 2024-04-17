@@ -8,7 +8,7 @@ const Feed = (props) => {
 
     useEffect(()=>{
       const fetchFeed = async() => {
-        const {data} = await supabase.from("AnimeForums").select().order('created_at', {ascending: false});
+        const {data} = await supabase.from("AnimeForums").select().order(props.filterBy, {ascending: props.ascending});
         setPosts(data);
       }
   

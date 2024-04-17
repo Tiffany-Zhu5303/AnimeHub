@@ -19,6 +19,7 @@
   height: 10vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .links {
@@ -38,6 +39,28 @@
   padding: 1rem;
 }
 
+.filters {
+  margin: 1em 0em;
+  width: 85vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.filter-buttons {
+  margin: 0em 1em;
+  height: fit-content;
+  background-color: #004B52;
+}
+
 #page-title {
   padding-left: 1em;
+}
+
+#search {
+  background-color: white;
+  color: black;
+  height: 4vh;
+  width: 30vw;
+  border-radius: 5px;
 }
