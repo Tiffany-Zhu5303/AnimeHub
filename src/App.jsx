@@ -3,7 +3,7 @@ import './App.css'
 import { supabase } from './client'
 import Feed from './components/Feed'
 
-function App(props) {
+function App() {
   const [filter, setFilter] = useState("created_at");
   const [ascending, setAscending] = useState(true);
 
@@ -24,7 +24,7 @@ function App(props) {
         <button className='filter-buttons' onClick={newestPosts}>Newest</button>
         <button className='filter-buttons' onClick={mostPopularPosts}>Most Popular</button>
       </div>
-      <Feed filterBy={filter} ascending={ascending}/>
+      <Feed filterBy={filter} ascending={ascending} />
       <br/>
     </div>
   )
