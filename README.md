@@ -4,8 +4,6 @@ Submitted by: **Tiffany Zhu**
 
 This web app: **An anime forum**
 
-Time spent: **5** hours spent in total
-
 ## Required Features
 
 The following **required** functionality is completed:
